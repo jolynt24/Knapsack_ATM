@@ -4,7 +4,7 @@ Most ATMs today on cash depletion displays messages such as "Unable to dispense 
 
 ### Problem
 
-- When there is cash depletion in the ATM, the ATM will be unable to dispense cash.
+- When there is cash depletion in the ATM, the ATM is unable to dispense cash.
 - Cash depletion occurs due 2 conditions:
   1. Insufficient funds
   2. Insufficient denominations
