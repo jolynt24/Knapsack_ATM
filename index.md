@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+## Knapsack Solution for Cash Withdrawal Problem of ATM
 
-You can use the [editor on GitHub](https://github.com/jolynt24/Knapsack_ATM/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Most ATMs today on cash depletion displays messages such as "Unable to dispense cash" or "Enter in multiples of 500 2000". Our project solves this problem by recalculating the amount that can be dispensed against that entered by the bank customer.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Problem
 
-### Markdown
+- When there is cash depletion in the ATM, the ATM will be unable to dispense cash.
+- Cash depletion occurs due 2 conditions:
+  1. Insufficient funds
+  2. Insufficient denominations
+  
+**Insufficient Funds**
+This situation occurs if the amount entered by the customer is greater than what is present in the ATMs.
+For e.g, if the ATM has only 35,000 left in it and the customer requests for 39,000.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**Insufficient Denominations**
+It is when the denominations are not available to meet the customer requested amount. 
+For e.g, if the ATM has only 500 notes and the customer requests 800 then the ATM is unable to dispense the amount due to the unavailability of the required denominations.
 
-```markdown
-Syntax highlighted code block
+### Solution
+To solve the above mentioned problem, we have developed a Python program that is able to recalculate the amount to be withdrawn and dispenses the same if the customer wants to continue the transaction with the newly calculated withdrawal amount.
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jolynt24/Knapsack_ATM/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+This was done using the **knapsack algorithm** with the greedy approach. The condition for this algorithm is that the amount calculated should be less than the customer entered amount.
