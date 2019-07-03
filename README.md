@@ -21,3 +21,5 @@ For e.g, if the ATM has only 500 notes and the customer requests 800 then the AT
 To solve the above mentioned problem, we have developed a Python program that is able to recalculate the amount to be withdrawn and dispenses the same if the customer wants to continue the transaction with the newly calculated withdrawal amount.
 
 This was done using the **knapsack algorithm** with the greedy approach. The condition for this algorithm is that the amount calculated should be less than the customer entered amount.
+
+![Image](https://raw.githubusercontent.com/jolynt24/Knapsack_ATM/master/Conditions_Flowchart.png)
